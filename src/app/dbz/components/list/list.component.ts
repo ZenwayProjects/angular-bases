@@ -20,9 +20,8 @@ export class ListComponent {
     },
   ];
 
-  public onDeleteCharacter(id: string) {
-
-    console.log({ id });
-    this.onDelete.emit(id)
+  public onDeleteCharacter(character: Character) {
+    console.log( character);
+    this.onDelete.emit(character.id)
   }
 }

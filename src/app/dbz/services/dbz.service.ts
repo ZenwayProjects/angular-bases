@@ -23,14 +23,13 @@ export class DbzService {
     },
   ];
 
-  public onNewCharacter(character: Character) {
+  public addCharacter(character: Character) {
 
-    // const newCharacter = {...character, id:uuid()}
 
     this.characters.push(character);
   }
 
-  public DeleteCharacterById(id: string) {
+  public deleteCharacterById(id: string) {
     this.characters = this.characters.filter(character => character.id !== id);
   }
 }
